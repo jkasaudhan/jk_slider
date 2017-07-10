@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+</head>
+<style>
+    #sliders-container {
+        margin: 100px auto;
+        background: #f4f4f4;
+        border: 1px solid #ccc;
+        width: 500px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #sliders-container .slide {
+        background: #f4f4f4;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    #sliders-container .btn {
+        margin: 10px;
+        padding: 10px;
+        background: #2aabd2;
+    }
+
+    #sliders-container .active {
+        background: yellow;
+    }
+</style>
+
+<body>
+
+<div id="sliders-container">
+    <div class="slide">Slider 1</div>
+    <div class="slide">Slider 2</div>
+    <div class="slide">Slider 3</div>
+    <div class="slide">Slider 4</div>
+    <div class="slide">Slider 5</div>
+    <div class ="slider-controls" >
+        <button type="button" class="btn" onclick="slider.prev()"> PREV</button>
+        <button type="button" class="btn" onclick="slider.next()"> NEXT</button>
+    </div>
+</div>
+
+<script src="jk_slider.js"></script>
+<script >
+    var slider = new JKSlider('sliders-container');
+</script>
+</body>
+
+</html>
